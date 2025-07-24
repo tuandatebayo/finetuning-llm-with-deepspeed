@@ -1,7 +1,6 @@
 # LLama3-8B Full Fine-Tuning with DeepSpeed
 
-Infra used: runpod.io
-Used two GPU nodes in the cluster. 8 GPUs per node.
+Infra used: Local GPU
 
 ## Overview
 This guide walks you through the process of performing full fine-tuning of the LLaMA-3-8B language model on multiple GPU machines using DeepSpeed. You will learn how to:
@@ -27,7 +26,7 @@ Hugging Face Datasets
 
 Dependencies: Install via pip:
 
-pip install deepspeed transformers datasets accelerate
+pip install -r requirements.txt
 
 ## Repository Structure
 
@@ -97,6 +96,8 @@ $ deepspeed \
   --num_train_epochs 10 \
   --learning_rate 5e-5 \
   --max_seq_length 1024
+
+or $ ./run.sh
 
 --model_name_or_path: Hugging Face model ID or local path
 --train_file: Path to your JSONL dataset

@@ -134,12 +134,14 @@ def main():
         logging_steps=args.logging_steps,
         per_device_train_batch_size=args.per_device_train_batch_size,
         gradient_accumulation_steps=args.gradient_accumulation_steps,
+        include_num_input_tokens_seen=True,
         learning_rate=args.learning_rate,
         fp16=True,
         deepspeed=args.deepspeed_config,
         remove_unused_columns=True,
+        report_to="wandb",  # or "tensorboard" or "none"
     )
-        # 6) TRAINER
+    # 6) TRAINER
     trainer = Trainer(
         model=model,
         args=training_args,
