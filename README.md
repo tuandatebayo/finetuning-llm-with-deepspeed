@@ -1,4 +1,4 @@
-# LLama3-8B Full Fine-Tuning with DeepSpeed
+# Full LLM Fine-Tuning with DeepSpeed
 
 Infra used: Local GPU
 
