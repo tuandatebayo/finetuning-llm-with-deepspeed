@@ -1,0 +1,7 @@
+deepspeed 
+transformers 
+datasets 
+accelerate
+wandb
+tiktoken
+transformers_stream_generator

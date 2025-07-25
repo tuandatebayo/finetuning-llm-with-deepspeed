@@ -2,9 +2,9 @@
 deepspeed --hostfile hostfile \
   --num_nodes 1 \
   --num_gpus 1 \
-  train_llama.py \
-  --model_name_or_path /data/models/llama3.2-1b/models--meta-llama--Llama-3.2-1B/snapshots/4e20de362430cd3b72f300e6b0f18e50e7166e08 \
-  --train_file train_llama.jsonl \
+  train_qwen.py \
+  --model_name_or_path /data/models/qwen1.8b-chat/ \
+  --train_file train_qwen.jsonl \
   --output_dir output \
   --deepspeed deepspeed_config.json \
   --per_device_train_batch_size 1 \

@@ -1,0 +1,2 @@
+{"id": "example_1", "conversations": [{"from": "user", "value": "你好"}, {"from": "assistant", "value": "你好，我是通义千问。"}]}
+{"id": "example_2", "conversations": [{"from": "user", "value": "请告诉我中国的首都是哪？"}, {"from": "assistant", "value": "中国的首都是北京。"}]}
