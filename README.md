@@ -24,6 +24,7 @@ DeepSpeed
 Hugging Face Transformers
 Hugging Face Datasets
 
+Login to HuggingFace in terminal
 Dependencies: Install via pip:
 
 pip install -r requirements.txt
